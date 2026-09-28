@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auf Deutsch! — German Learning Book</title>
+  <meta name="description" content="A complete German learning book from A1 to B2 with top 1000 words, grammar tips and memory tricks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Sidebar overlay (mobile) -->
+  <div id="sidebar-overlay"></div>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <div id="sidebar-title">Auf Deutsch!</div>
+      <div id="sidebar-subtitle">A1 → B2 · Top 1000 Words</div>
+    </div>
+    <div id="progress-wrap">
+      <div id="progress-label">
+        <span>Progress</span>
+        <span id="progress-pct">0%</span>
+      </div>
+      <div id="progress-bar-track">
+        <div id="progress-bar-fill"></div>
+      </div>
+    </div>
+    <div id="chapter-list"></div>
+  </nav>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- Top bar -->
+    <header id="topbar">
+      <button id="menu-toggle" aria-label="Menu">☰</button>
+      <div id="breadcrumb"><strong>Auf Deutsch!</strong></div>
+      <div id="topbar-right">
+        <button id="complete-btn">○  Mark complete</button>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div id="content-wrap"></div>
+
+    <!-- Nav bar -->
+    <footer id="nav-bar">
+      <button class="nav-btn" id="prev-btn">← Previous</button>
+      <div id="nav-counter">1 / 22</div>
+      <button class="nav-btn primary" id="next-btn">Next →</button>
+    </footer>
+
+  </div>
+</div>
+
+<script src="data/chapters.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
